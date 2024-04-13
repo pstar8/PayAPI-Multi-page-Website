@@ -1,0 +1,708 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Public Sans', 'DM Serif Display', sans-serif;
+  font-weight: 300;
+  font-style: normal, italic;
+}
+
+header {
+  background-color: #fbfcfe;
+}
+
+svg {
+  margin: 0 0 0 0;
+  padding: 0;
+  width: 100%;
+}
+
+nav {
+  display: flex;
+}
+
+.nav-items {
+  display: flex;
+}
+
+.headertext {
+  font-family: 'DM Serif Display';
+  color: #36536b;
+  margin: 20px;
+  font-size: 32px;
+}
+
+.email {
+  padding: 15px 0px 15px 100px;
+  margin: 20px;
+  border-radius: 50px;
+  color: #c0c1c2;
+  border: 1px solid #c0c1c2;
+}
+
+.maincontainer {
+  background-color: #1b262f;
+  padding: 5px;
+}
+
+.containerarticle {
+  line-height: 10px;
+  color: #c0c1c2;
+  font-size: 12px;
+}
+
+.whoweworkwith {
+  color: #fbfcfe;
+  font-family: 'DM Serif Display';
+  font-size: 20px;
+  padding: 20px;
+}
+
+.aboutus {
+  width: 150px;
+  margin: 5px 5px 5px 50px;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 10px 20px 10px 20px;
+  border-radius: 70px;
+  border: 2px solid #fbfcfe;
+  justify-self: center;
+  text-align: center;
+  align-self: center;
+}
+
+@media screen and (min-width: 200px) and (max-width: 650px) {
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  .bar1,
+  .bar2,
+  .bar3 {
+    height: 5px;
+    width: 40px;
+    margin: 5px;
+    border: 2px solid #63536b;
+    background-color: #63536b;
+  }
+
+  .Pricing,
+  .About,
+  .Contact,
+  .Scheduleademo {
+    display: none;
+  }
+
+  .headerarticle {
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+  }
+
+  header nav svg {
+    margin: 10px 100px 0px 20px;
+  }
+  header .menu-btn {
+    margin: 10px 10px 0px 0px;
+  }
+
+  .demo {
+    width: 300px;
+    color: #fff;
+    background-color: #ba4270;
+    padding: 15px 0px 15px 0px;
+    border-radius: 50px;
+    margin: 0 20px 0 0px;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  .question {
+    padding: 15px;
+    margin: 15px;
+    font-size: 16px;
+    color: #6c8294;
+  }
+
+  .contactus {
+    text-decoration: underline;
+    font-size: 18px;
+    font-weight: 600;
+    color: #6c8294;
+  }
+
+  .containericons {
+    color: #fbfcfe;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px;
+  }
+
+  .containerarticle {
+    margin: 20px;
+    line-height: 1.5rem;
+    text-align: center;
+  }
+
+  .othercontainer {
+    background-color: #fbfcfe;
+    padding: 20px;
+  }
+
+  .othercontainersvgicon {
+    margin-left: 100px;
+  }
+
+  .easy,
+  .simpleuidesign,
+  .personalfinances,
+  .bankingandcoverage,
+  .consumerpayments,
+  .readytostart {
+    font-size: 24px;
+    margin: 20px;
+    font-family: 'DM Serif Display';
+    font-weight: 500;
+    color: #36536b;
+    text-align: center;
+  }
+
+  .othercontainerarticle,
+  .uidesignarticle,
+  .financesarticle,
+  .bacarticle,
+  .consumerpaymentsarticle {
+    margin-bottom: 50px;
+    color: #6c8294;
+    text-align: center;
+    justify-self: center;
+    font-weight: 300;
+    font-size: 16px;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'DM Serif Display';
+    background-color: #1b262f;
+    padding: 50px;
+    text-align: center;
+  }
+
+  footer .footerlinks {
+    display: flex;
+    flex-direction: column;
+  }
+
+  footer .pricing,
+  .about,
+  .contact {
+    color: #6c8294;
+    padding: 10px;
+  }
+
+  footer .footericons {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+  }
+}
+
+@media screen and (min-width: 650px) and (max-width: 1023px) {
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: #fbfcfe;
+  }
+
+  .nav-items {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .pac {
+    display: flex;
+    align-items: center;
+    gap: 1px;
+  }
+
+  .Pricing,
+  .About,
+  .Contact {
+    color: #6c8294;
+    font-weight: 500;
+  }
+
+  .Scheduleademo {
+    min-width: 200px;
+    padding: 15px 20px 15px 20px;
+    background-color: #ba4270;
+    color: #fbfcfe;
+    border-radius: 50px;
+    border: 2px solid #ba4270;
+    margin: 0px;
+  }
+
+  header {
+    position: relative;
+    padding: 20px 20px 70px 20px;
+  }
+
+  header .svgheaderillustration svg {
+    position: relative;
+    left: 200px;
+  }
+
+  header .headertext {
+    font-size: 36px;
+    font-weight: 500;
+    width: 420px;
+    text-align: center;
+    margin: 0px 0px 20px 150px;
+  }
+
+  .email {
+    padding: 10px 15px 10px 15px;
+    margin: 0px;
+    align-items: center;
+    border-radius: 50px;
+    color: #c0c1c2;
+    border: 1px solid #c0c1c2;
+  }
+  .emailschedule {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+  }
+
+  .demo {
+    width: 180px;
+    color: #fff;
+    background-color: #ba4270;
+    padding: 10px 2px 10px 2px;
+    border-radius: 50px;
+    font-weight: 300;
+    text-align: center;
+    position: relative;
+    right: 30px;
+  }
+
+  .question {
+    text-align: center;
+    padding: 15px;
+    /* margin: 15px; */
+    font-size: 16px;
+    color: #6c8294;
+  }
+
+  .contactus {
+    text-decoration: underline;
+    font-size: 18px;
+    font-weight: 600;
+    color: #6c8294;
+  }
+
+  .maincontainer {
+    padding: 40px;
+  }
+
+  .containericons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    /* padding: 20px; */
+    margin: 20px;
+  }
+
+  .whoweworkwith {
+    color: #fbfcfe;
+    font-family: 'DM Serif Display';
+    font-size: 36px;
+    padding: 10px;
+    text-align: center;
+    font-weight: 500;
+  }
+
+  .containerarticle {
+    color: #c0c1c2;
+    font-size: 12px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .Today {
+    text-align: center;
+    width: 250px;
+  }
+
+  .aboutus {
+    margin: 0;
+  }
+
+  .othercontainer {
+    background-color: #fbfcfe;
+    padding: 40px;
+  }
+
+  .othercontainersvgicon {
+    margin-left: 50px;
+  }
+
+  .easy,
+  .simpleuidesign,
+  .readytostart {
+    font-size: 36px;
+    margin: 20px;
+    font-family: 'DM Serif Display';
+    font-weight: 500;
+    color: #36536b;
+    text-align: center;
+  }
+
+  .othercontainerarticle,
+  .uidesignarticle,
+  .financesarticle,
+  .bacarticle,
+  .consumerpaymentsarticle {
+    margin-bottom: 50px;
+    color: #6c8294;
+    text-align: center;
+    justify-self: center;
+    font-weight: 300;
+    font-size: 16px;
+  }
+
+  .pbc {
+    display: flex;
+    flex-direction: row;
+    /* flex: 1 0 auto; */
+    margin: 10px 0px 30px 0px;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Public Sans';
+  }
+
+  .personalfinances,
+  .bankingandcoverage,
+  .consumerpayments {
+    font-size: 18px;
+    color: #36536b;
+    margin: 10px;
+    font-weight: 500;
+    font-family: 'Public Sans';
+  }
+
+  footer {
+    padding: 30px;
+    background-color: #1b262f;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  footer p {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: #6c8294;
+  }
+
+  footer .footericons {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 3000px) {
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  header {
+    padding: 50px;
+    position: relative;
+  }
+
+  .nav-items {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+  }
+
+  .pac {
+    display: flex;
+    align-items: center;
+  }
+
+  .Pricing,
+  .About,
+  .Contact {
+    color: #6c8294;
+    font-weight: 500;
+  }
+
+  .Scheduleademo {
+    min-width: 200px;
+    padding: 15px 20px 15px 20px;
+    background-color: #ba4270;
+    color: #fbfcfe;
+    border-radius: 50px;
+    border: 2px solid #ba4270;
+    margin: 0px;
+  }
+
+  header .headertext {
+    color: #36536b;
+    font-size: 40px;
+    width: 300px;
+  }
+
+  header .headercontent {
+    display: flex;
+    flex-direction: column;
+  }
+
+  header .headercontentandsvg {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10%;
+  }
+
+  .email {
+    padding: 10px 50px 10px 50px;
+    margin: 0px;
+    align-items: center;
+    border-radius: 50px;
+    color: #c0c1c2;
+    border: 1px solid #c0c1c2;
+  }
+  .emailschedule {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+  }
+
+  .demo {
+    width: 180px;
+    color: #fbfcfe;
+    background-color: #ba4270;
+    padding: 12px 2px 12px 2px;
+    border-radius: 50px;
+    font-weight: 300;
+    text-align: center;
+    position: relative;
+    right: 100px;
+  }
+
+  .question {
+    padding: 15px;
+    font-size: 16px;
+    color: #6c8294;
+  }
+
+  .contactus {
+    text-decoration: underline;
+    font-size: 18px;
+    font-weight: 600;
+    color: #6c8294;
+  }
+
+  .maincontainer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 50px;
+    gap: 20px;
+  }
+
+  .containericons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .containerarticle {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: left;
+    gap: 20px;
+    max-width: 400px;
+    /* width: 350px; */
+  }
+
+  .whoweworkwith {
+    font-size: 36px;
+    font-weight: 500;
+    margin: 0;
+  }
+
+  .Today {
+    line-height: 30px;
+  }
+
+  .aboutus {
+    margin: 0 120px 0 0;
+  }
+
+  .othercontainer {
+    padding: 50px;
+    color: #fbfcfe;
+  }
+
+  .easytoimplementcontainer {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .othercontainerarticle,
+  .uidesignarticle {
+    width: 400px;
+    text-align: left;
+  }
+
+  .othercontainercontent {
+    display: flex;
+    gap: 40px;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+
+  .easy,
+  .simpleuidesign,
+  .readytostart {
+    font-size: 40px;
+    margin: 20px;
+    font-family: 'DM Serif Display';
+    font-weight: 600;
+    color: #36536b;
+    text-align: center;
+  }
+
+  .othercontainerarticle,
+  .uidesignarticle,
+  .financesarticle,
+  .bacarticle,
+  .consumerpaymentsarticle {
+    margin-bottom: 50px;
+    color: #6c8294;
+    text-align: center;
+    justify-self: center;
+    font-weight: 300;
+    font-size: 16px;
+  }
+
+  .pbc {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    /* flex: 1 0 auto; */
+    margin: 10px 0px 30px 0px;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Public Sans';
+  }
+
+  .personalfinances,
+  .bankingandcoverage,
+  .consumerpayments {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 350px;
+    font-size: 18px;
+    color: #36536b;
+    margin: 10px;
+    font-weight: 500;
+    font-family: 'Public Sans';
+  }
+
+  .othercontainersvgicon {
+    margin-left: 120px;
+  }
+
+  .readytostartandemail {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-evenly;
+  }
+
+  footer {
+    padding: 30px;
+    background-color: #1b262f;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  footer p {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: #6c8294;
+  }
+
+  footer .footericons {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+}
